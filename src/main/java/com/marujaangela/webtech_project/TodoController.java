@@ -9,6 +9,9 @@ public class TodoController {
     @GetMapping(path = "/todo")
     public ResponseEntity<Todo[]> getTodo() {
         final Todo todo1 = new Todo("Statistik HA", false);
+        final Todo todo2 = new Todo("Mathe HA", true);
+
+        Todo[] todos = {todo1, todo2};
+        return ResponseEntity.ok(todos);
     }
-    final Todo todo2 = new Todo("Mathe HA", true);
 }
