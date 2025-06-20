@@ -1,7 +1,7 @@
 ## BUILD Stage ##
 ## BUILD Stage ##
 FROM gradle:jdk21-jammy AS build
-COPY --chown=gradle:gradle . /home/gradle/src
+COPY --from=build /home/gradle/src/build/libs/*.jar app.jar
 WORKDIR /home/gradle/src
 # for all env-variables that we will use in the future:
 ARG DB_PASSWORD
