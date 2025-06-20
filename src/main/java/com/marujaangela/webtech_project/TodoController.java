@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("*/api/todos")
+@RequestMapping("/api/todos")
 public class TodoController {
 
     private final TodoRepository repository;
