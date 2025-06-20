@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://frontend-studytimer.onrender.com")
 @RestController
 @RequestMapping("/api/todos")
 public class TodoController {
