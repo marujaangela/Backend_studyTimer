@@ -9,7 +9,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("https://dein-frontend.onrender.com") // 🔁 deine echte URL hier eintragen
+                .allowedOrigins("https://frontend-studytimer.onrender.com") // echte URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowCredentials(false);
     }
