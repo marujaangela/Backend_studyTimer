@@ -28,6 +28,7 @@ public class Todo {
     // Getter/Setter
 
     public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
     public String getTaskDescription() { return taskDescription; }
     public void setTaskDescription(String taskDescription) { this.taskDescription = taskDescription; }
